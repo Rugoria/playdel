@@ -89,7 +89,7 @@ export default function TermsOfServicePage() {
                         If you have any questions about these Terms, please contact us at:
                     </p>
                     <div className="bg-slate-800/50 p-6 rounded-lg inline-block">
-                        <p className="text-primary font-semibold">Email: <a href="mailto:hello@playdel.com" className="hover:underline">hello@playdel.com</a></p>
+                        <p className="text-primary font-semibold">Email: <a href="mailto:team@playdel.com" className="hover:underline">team@playdel.com</a></p>
                     </div>
                 </section>
 
