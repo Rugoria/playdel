@@ -64,8 +64,8 @@ export default function Footer() {
                         <h4 className="text-base font-bold text-text-main mb-2 tracking-wide">Support</h4>
                         <ul className="list-none p-0 m-0 flex flex-col gap-2.5">
                             <li><a href="#" className="text-muted no-underline text-sm transition-all hover:text-primary hover:translate-x-1 inline-block">FAQ</a></li>
-                            <li><a href="#" className="text-muted no-underline text-sm transition-all hover:text-primary hover:translate-x-1 inline-block">Privacy Policy</a></li>
-                            <li><a href="#" className="text-muted no-underline text-sm transition-all hover:text-primary hover:translate-x-1 inline-block">Terms of Service</a></li>
+                            <li><a href="/privacy-policy" className="text-muted no-underline text-sm transition-all hover:text-primary hover:translate-x-1 inline-block">Privacy Policy</a></li>
+                            <li><a href="/terms-of-service" className="text-muted no-underline text-sm transition-all hover:text-primary hover:translate-x-1 inline-block">Terms of Service</a></li>
                         </ul>
                     </div>
 
@@ -96,9 +96,9 @@ export default function Footer() {
                 <div className="max-w-[1200px] mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
                     <p className="text-muted text-sm m-0">© 2026 Playdel. All rights reserved.</p>
                     <div className="flex items-center gap-4">
-                        <a href="#" className="text-muted text-sm no-underline hover:text-primary transition-colors">Privacy</a>
+                        <a href="/privacy-policy" className="text-muted text-sm no-underline hover:text-primary transition-colors">Privacy</a>
                         <span className="text-slate-700">•</span>
-                        <a href="#" className="text-muted text-sm no-underline hover:text-primary transition-colors">Terms & Conditions</a>
+                        <a href="/terms-of-service" className="text-muted text-sm no-underline hover:text-primary transition-colors">Terms & Conditions</a>
                     </div>
                 </div>
             </div>
