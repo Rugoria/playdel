@@ -80,7 +80,7 @@ export default function PrivacyPolicyPage() {
                         If you have any questions or concerns about this Privacy Policy, please contact us at:
                     </p>
                     <div className="bg-slate-800/50 p-6 rounded-lg inline-block">
-                        <p className="text-primary font-semibold">Email: <a href="mailto:hello@playdel.com" className="hover:underline">hello@playdel.com</a></p>
+                        <p className="text-primary font-semibold">Email: <a href="mailto:team@playdel.net" className="hover:underline">team@playdel.net</a></p>
                     </div>
                 </section>
 
