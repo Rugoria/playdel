@@ -18,69 +18,180 @@ export default function PrivacyPolicyPage() {
                 {/* Introduction */}
                 <section className="space-y-4">
                     <p className="leading-relaxed text-slate-300">
-                        At Playdel ("we," "our," or "us"), we value your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our services. By accessing or using Playdel, you agree to the terms of this Privacy Policy.
+                        Playdel respects your privacy and is committed to protecting your personal data. This Privacy Policy explains what information we collect, how we use it, with whom we share it, and your rights regarding your information.
+                    </p>
+                    <p className="leading-relaxed text-slate-300">
+                        By using the Playdel mobile application and related services (the “Service”), you agree to the collection and use of information in accordance with this policy.
                     </p>
                 </section>
 
-                {/* Information We Collect */}
+                {/* 1. Information We Collect */}
                 <section className="space-y-6">
                     <h2 className="text-2xl font-bold text-white border-l-4 border-primary pl-4">1. Information We Collect</h2>
-                    <div className="space-y-4 text-slate-300">
-                        <p>We collect information that you provide securely to us and data automatically collected when you use our services.</p>
-                        <ul className="list-disc pl-6 space-y-2 marker:text-primary">
-                            <li><strong>Personal Information:</strong> Name, email address, phone number, and account credentials when you register.</li>
-                            <li><strong>Usage Data:</strong> Information about your interactions with the platform, such as pages visited, time spent, and game preferences.</li>
-                            <li><strong>Device Information:</strong> IP address, browser type, operating system, and device identifiers.</li>
-                        </ul>
+
+                    <div className="space-y-4">
+                        <h3 className="text-xl font-semibold text-white">1.1. Personal Information</h3>
+                        <div className="text-slate-300 space-y-2">
+                            <p>We collect information you provide directly when you:</p>
+                            <ul className="list-disc pl-6 space-y-1 marker:text-primary">
+                                <li>Create an account</li>
+                                <li>Book padel courts</li>
+                                <li>Join matches or log scores</li>
+                                <li>Interact with club management features</li>
+                            </ul>
+                            <p className="mt-2">This may include:</p>
+                            <ul className="list-disc pl-6 space-y-1 marker:text-primary">
+                                <li>Name, email address, phone number</li>
+                                <li>Profile photo</li>
+                                <li>Date of birth</li>
+                                <li>Player rating or performance data</li>
+                                <li>Booking and payment details</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="space-y-4">
+                        <h3 className="text-xl font-semibold text-white">1.2. Location Data</h3>
+                        <div className="text-slate-300 space-y-2">
+                            <p>With your permission, we collect:</p>
+                            <ul className="list-disc pl-6 space-y-1 marker:text-primary">
+                                <li>Precise location to suggest nearby courts</li>
+                                <li>Geo-fencing data for employee attendance tracking (for clubs & managers)</li>
+                            </ul>
+                            <p>Location data is used only with consent and can be disabled anytime in settings.</p>
+                        </div>
+                    </div>
+
+                    <div className="space-y-4">
+                        <h3 className="text-xl font-semibold text-white">1.3. Usage and Device Information</h3>
+                        <div className="text-slate-300 space-y-2">
+                            <p>We automatically collect:</p>
+                            <ul className="list-disc pl-6 space-y-1 marker:text-primary">
+                                <li>Device type and model</li>
+                                <li>Operating system version</li>
+                                <li>App usage data (pages visited, timestamps)</li>
+                                <li>Crash reports and performance logs</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="space-y-4">
+                        <h3 className="text-xl font-semibold text-white">1.4. Scores and Rankings</h3>
+                        <div className="text-slate-300 space-y-2">
+                            <p>When you log match results, we collect and process this data to:</p>
+                            <ul className="list-disc pl-6 space-y-1 marker:text-primary">
+                                <li>Compute player rankings</li>
+                                <li>Display match history</li>
+                                <li>Improve matchmaking</li>
+                            </ul>
+                        </div>
                     </div>
                 </section>
 
-                {/* How We Use Your Information */}
+                {/* 2. How We Use Your Information */}
                 <section className="space-y-6">
                     <h2 className="text-2xl font-bold text-white border-l-4 border-primary pl-4">2. How We Use Your Information</h2>
                     <div className="space-y-4 text-slate-300">
-                        <p>We use the collected data for the following purposes:</p>
+                        <p>We use your information to:</p>
                         <ul className="list-disc pl-6 space-y-2 marker:text-primary">
-                            <li>To provide and maintain our services, including booking courts and finding partners.</li>
-                            <li>To personalize your experience and improve platform functionality.</li>
-                            <li>To communicate with you regarding updates, offers, and support.</li>
-                            <li>To ensure the security and integrity of our platform.</li>
+                            <li>Provide and improve the Service</li>
+                            <li>Enable matchmaking and player ranking</li>
+                            <li>Process court bookings and generate receipts</li>
+                            <li>Support club management features (attendance, scheduling)</li>
+                            <li>Communicate important updates or changes</li>
+                            <li>Personalize app experience</li>
+                            <li>Monitor performance and fix issues</li>
                         </ul>
+                        <p>We do not sell your personal data to third parties.</p>
                     </div>
                 </section>
 
-                {/* Data Sharing and Disclosure */}
+                {/* 3. Sharing Your Information */}
                 <section className="space-y-6">
-                    <h2 className="text-2xl font-bold text-white border-l-4 border-primary pl-4">3. Data Sharing and Disclosure</h2>
+                    <h2 className="text-2xl font-bold text-white border-l-4 border-primary pl-4">3. Sharing Your Information</h2>
+                    <p className="text-slate-300">We may share your data with:</p>
+
+                    <div className="space-y-4">
+                        <h3 className="text-xl font-semibold text-white">3.1. Service Providers</h3>
+                        <p className="text-slate-300">
+                            Third-party vendors who help operate the app (e.g., analytics, cloud hosting, payment processors).
+                        </p>
+                    </div>
+
+                    <div className="space-y-4">
+                        <h3 className="text-xl font-semibold text-white">3.2. Clubs and Managers</h3>
+                        <div className="text-slate-300 space-y-2">
+                            <p>If you book a court or participate in a club:</p>
+                            <ul className="list-disc pl-6 space-y-1 marker:text-primary">
+                                <li>The relevant club may access your name, booking details, scores, and performance data for operational purposes.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="space-y-4">
+                        <h3 className="text-xl font-semibold text-white">3.3. Legal Compliance</h3>
+                        <p className="text-slate-300">
+                            We may disclose information when required by law or to protect rights, safety, or property.
+                        </p>
+                    </div>
+                </section>
+
+                {/* 4. Your Choices and Rights */}
+                <section className="space-y-6">
+                    <h2 className="text-2xl font-bold text-white border-l-4 border-primary pl-4">4. Your Choices and Rights</h2>
+                    <div className="space-y-4 text-slate-300">
+                        <p>You may:</p>
+                        <ul className="list-disc pl-6 space-y-2 marker:text-primary">
+                            <li>Access, edit, or delete your account information</li>
+                            <li>Withdraw consent for location data (app settings)</li>
+                            <li>Opt out of non-essential notifications</li>
+                            <li>Request copies of your data</li>
+                        </ul>
+                        <p>To exercise these rights, contact us at the contact details provided below.</p>
+                    </div>
+                </section>
+
+                {/* 5. Data Security */}
+                <section className="space-y-6">
+                    <h2 className="text-2xl font-bold text-white border-l-4 border-primary pl-4">5. Data Security</h2>
                     <p className="leading-relaxed text-slate-300">
-                        We do not sell your personal data. However, we may share your information with trusted third-party service providers who assist us in operating our direct platform, conducting business, or serving you, provided they agree to keep this information confidential. We may also disclose information if required by law.
+                        We use standard industry practices to protect data, including encryption and secure servers. However, no method is 100% secure; we cannot guarantee absolute protection.
                     </p>
                 </section>
 
-                {/* Data Security */}
+                {/* 6. Children’s Privacy */}
                 <section className="space-y-6">
-                    <h2 className="text-2xl font-bold text-white border-l-4 border-primary pl-4">4. Data Security</h2>
+                    <h2 className="text-2xl font-bold text-white border-l-4 border-primary pl-4">6. Children’s Privacy</h2>
                     <p className="leading-relaxed text-slate-300">
-                        We implement industry-standard security measures to protect your personal information. However, please be aware that no method of transmission over the internet or method of electronic storage is 100% secure.
+                        The Service is not intended for children under 13. We do not knowingly collect data from users under the age of 13.
                     </p>
                 </section>
 
-                {/* Your Rights */}
+                {/* 7. Third-Party Links */}
                 <section className="space-y-6">
-                    <h2 className="text-2xl font-bold text-white border-l-4 border-primary pl-4">5. Your Rights</h2>
+                    <h2 className="text-2xl font-bold text-white border-l-4 border-primary pl-4">7. Third-Party Links</h2>
                     <p className="leading-relaxed text-slate-300">
-                        You have the right to access, update, or delete your personal information held by us. If you wish to exercise these rights, please contact our support team.
+                        The app may contain links to external services. We are not responsible for the privacy practices of those sites.
                     </p>
                 </section>
 
-                {/* Contact Us */}
+                {/* 8. Changes to This Policy */}
+                <section className="space-y-6">
+                    <h2 className="text-2xl font-bold text-white border-l-4 border-primary pl-4">8. Changes to This Policy</h2>
+                    <p className="leading-relaxed text-slate-300">
+                        We may update this policy occasionally. We’ll notify you of significant changes in the app or by email.
+                    </p>
+                </section>
+
+                {/* 9. Contact Us */}
                 <section className="space-y-6 border-t border-slate-700/50 pt-8 mt-12">
-                    <h2 className="text-2xl font-bold text-white mb-4">Contact Us</h2>
+                    <h2 className="text-2xl font-bold text-white mb-4">9. Contact Us</h2>
                     <p className="text-slate-300 mb-4">
-                        If you have any questions or concerns about this Privacy Policy, please contact us at:
+                        If you have questions, concerns, or requests regarding your privacy, please contact:
                     </p>
                     <div className="bg-slate-800/50 p-6 rounded-lg inline-block">
-                        <p className="text-primary font-semibold">Email: <a href="mailto:team@playdel.net" className="hover:underline">team@playdel.net</a></p>
+                        <p className="text-white font-semibold mb-2">Rugoria Technologies</p>
+                        <p className="text-primary font-semibold">Email: <a href="mailto:team@rugoria.net" className="hover:underline">team@rugoria.net</a></p>
                     </div>
                 </section>
 
