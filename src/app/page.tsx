@@ -2,7 +2,6 @@
 import Hero from '@/components/Hero';
 import Mission from '@/components/Mission';
 import HowItWorks from '@/components/HowItWorks';
-import InteractiveSteps from '@/components/InteractiveSteps';
 import Clubs from '@/components/Clubs';
 import ForPlayers from '@/components/ForPlayers';
 import Trust from '@/components/Trust';

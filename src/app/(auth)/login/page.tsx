@@ -83,9 +83,10 @@ export default function LoginPage() {
                 router.push('/dashboard');
             }
 
-        } catch (err: any) {
-            console.error("Login submission error:", err.message);
-            setError(err.message || "An unexpected error occurred during login.");
+        } catch (err: unknown) {
+            const errorMessage = err instanceof Error ? err.message : "An unexpected error occurred during login.";
+            console.error("Login submission error:", errorMessage);
+            setError(errorMessage);
         } finally {
             setLoading(false);
         }

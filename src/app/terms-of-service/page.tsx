@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 
 export default function TermsOfServicePage() {
@@ -18,7 +19,7 @@ export default function TermsOfServicePage() {
                 {/* Introduction */}
                 <section className="space-y-4">
                     <p className="leading-relaxed text-slate-300">
-                        Welcome to Playdel! These Terms of Service ("Terms") govern your use of our website and services. By accessing or using Playdel, you agree to be bound by these Terms. If you do not agree to these Terms, please do not use our services.
+                        Welcome to Playdel! These Terms of Service (&quot;Terms&quot;) govern your use of our website and services. By accessing or using Playdel, you agree to be bound by these Terms. If you do not agree to these Terms, please do not use our services.
                     </p>
                 </section>
 
@@ -78,7 +79,7 @@ export default function TermsOfServicePage() {
                 <section className="space-y-6">
                     <h2 className="text-2xl font-bold text-white border-l-4 border-primary pl-4">6. Disclaimer of Warranties</h2>
                     <p className="leading-relaxed text-slate-300">
-                        Our services are provided "as is" and "as available" without warranties of any kind, either express or implied. We do not warrant that the service will be uninterrupted or error-free.
+                        Our services are provided &quot;as is&quot; and &quot;as available&quot; without warranties of any kind, either express or implied. We do not warrant that the service will be uninterrupted or error-free.
                     </p>
                 </section>
 
