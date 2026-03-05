@@ -1,7 +1,5 @@
 'use client';
-
 import { useEffect, useRef, useState } from 'react';
-import Image from 'next/image';
 import gsap from 'gsap';
 
 export default function InteractiveSteps() {
@@ -103,7 +101,7 @@ export default function InteractiveSteps() {
                 </div>
 
                 {/* 3D CAROUSEL */}
-                <div className="phone-carousel">
+                {/* <div className="phone-carousel">
                     <div className="phones-container" ref={carouselRef}>
                         {phones.map((phone, i) => (
                             <div key={i} className="phone-mockup">
@@ -119,7 +117,7 @@ export default function InteractiveSteps() {
                             </div>
                         ))}
                     </div>
-                </div>
+                </div> */}
 
             </div>
         </section>

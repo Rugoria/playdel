@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #a3e635;
+  --color-bg: #0b1220;
+  --color-bg-elev: #0f172a;
+  --color-surface: #0b1220;
+  --color-surface-2: #0a1020;
+  --color-text-main: #e5e7eb;
+  --color-muted: #94a3b8;
+  --color-border-dim: rgba(148, 163, 184, 0.18);
+
+  --radius-base: 16px;
+  --radius-lg: 24px;
+
+  /* Admin Theme Colors */
+  --color-admin-teal-50: #ecf4e9;
+  --color-admin-teal-100: #e2e9e2;
+  --color-admin-teal-200: #c5d3c5;
+  --color-admin-teal-300: #a8bda8;
+  --color-admin-teal-400: #bcf39e;
+  --color-admin-teal-500: #6e916e;
+  --color-admin-teal-600: #587458;
+  --color-admin-teal-700: #425742;
+  --color-admin-teal-800: #2c3a2c;
+  --color-admin-teal-900: #161d16;
+  --color-admin-teal-950: #0f140f;
+
+  --color-admin-snow-50: #f0f0f4;
+  --color-admin-snow-100: #e1e1ea;
+  --color-admin-snow-200: #c3c3d5;
+  --color-admin-snow-300: #a5a5c0;
+  --color-admin-snow-400: #8888aa;
+  --color-admin-snow-500: #6a6a95;
+  --color-admin-snow-600: #555577;
+  --color-admin-snow-700: #3f3f5a;
+  --color-admin-snow-800: #2a2a3c;
+  --color-admin-snow-900: #15151e;
+  --color-admin-snow-950: #0f0f15;
+
+  --color-admin-pine-50: #edf7f6;
+  --color-admin-pine-100: #dcefec;
+  --color-admin-pine-200: #b8e0da;
+  --color-admin-pine-300: #95d0c7;
+  --color-admin-pine-400: #71c1b5;
+  --color-admin-pine-500: #4eb1a2;
+  --color-admin-pine-600: #3e8e82;
+  --color-admin-pine-700: #2f6a61;
+  --color-admin-pine-800: #1f4741;
+  --color-admin-pine-900: #102320;
+  --color-admin-pine-950: #0b1917;
+
+  --color-admin-tea-50: #f0f8ec;
+  --color-admin-tea-100: #e2f1da;
+  --color-admin-tea-200: #c5e4b4;
+  --color-admin-tea-300: #a8d68f;
+  --color-admin-tea-400: #8bc969;
+  --color-admin-tea-500: #6ebb44;
+  --color-admin-tea-600: #589636;
+  --color-admin-tea-700: #427029;
+  --color-admin-tea-800: #2c4b1b;
+  --color-admin-tea-900: #16250e;
+  --color-admin-tea-950: #0f1a09;
+
+  --color-admin-honeydew-50: #f0f5f0;
+  --color-admin-honeydew-100: #e1eae1;
+  --color-admin-honeydew-200: #c3d5c3;
+  --color-admin-honeydew-300: #a5c0a5;
+  --color-admin-honeydew-400: #87ab87;
+  --color-admin-honeydew-500: #699669;
+  --color-admin-honeydew-600: #547854;
+  --color-admin-honeydew-700: #3f5a3f;
+  --color-admin-honeydew-800: #2a3c2a;
+  --color-admin-honeydew-900: #151e15;
+  --color-admin-honeydew-950: #0f150f;
+}
+
+/* Custom Utilities if absolutely necessary, but preferring Tailwind classes */
+@layer utilities {
+  .text-shadow-sm {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+}
+
+/* Global Reset / Base Styles */
+body {
+  background:
+    radial-gradient(1200px 700px at 10% -10%, #1a2645 0%, transparent 60%),
+    radial-gradient(900px 600px at 120% 10%, #10243e 0%, transparent 55%),
+    var(--color-bg);
+  background-attachment: fixed;
+  color: var(--color-text-main);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
