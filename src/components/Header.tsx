@@ -1,5 +1,6 @@
 'use client';
 
+import { Link } from 'lucide-react';
 import { useState } from 'react';
 
 export default function Header() {
@@ -13,7 +14,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full bg-slate-900/85 backdrop-blur-xl border-b border-border-dim transition-all duration-300">
       <div className="max-w-[1200px] mx-auto px-6 h-[72px] flex items-center justify-between">
         {/* Logo */}
-        <a href="/" className="flex items-center gap-3 no-underline text-text-main font-extrabold tracking-wide text-xl">
+        <Link href="/" className="flex items-center gap-3 no-underline text-text-main font-extrabold tracking-wide text-xl">
           <div className="flex items-center justify-center">
             <svg width="24" height="24" viewBox="0 0 32 32" fill="none">
               <rect width="32" height="32" rx="8" className="fill-primary" />
@@ -21,7 +22,7 @@ export default function Header() {
             </svg>
           </div>
           PLAYDEL
-        </a>
+        </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
