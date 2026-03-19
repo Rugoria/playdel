@@ -66,20 +66,26 @@ export default function Hero() {
 
                     <div className="flex flex-col lg:flex-row gap-4 items-start lg:items-end w-full lg:w-auto">
                         <div className="flex flex-col md:flex-row gap-3 w-full lg:w-auto">
-                            <a href="#coach" className="flex items-center gap-3 bg-slate-900/60 backdrop-blur-xl border border-white/15 px-4 py-2.5 rounded-2xl cursor-pointer transition-all hover:bg-slate-900/85 hover:-translate-y-0.5 hover:border-primary w-full md:w-[220px] no-underline group">
-                                <div className="text-[15px] font-semibold text-white flex-1 transition-colors group-hover:text-primary">I&apos;m Player</div>
-                                <div className="flex items-center gap-2 bg-black px-3 py-1.5 rounded-lg border border-white/20">
-                                    <Image
-                                        src="/google-play.png"
-                                        alt="Google Play Store"
-                                        width={30}
-                                        height={30}
-                                        className="w-[30%] h-[30%] object-cover"
-                                    />
-                                    <div className="flex flex-col items-start leading-none">
-                                        <span className="text-[9px] text-gray-300 uppercase mb-0.5">GET IT ON</span>
-                                        <span className="text-[13px] font-bold text-white">Play Store</span>
-                                    </div>
+                            <a href="#coach" className="flex items-center gap-2 bg-black px-4 py-2.5 rounded-lg border border-white/20 cursor-pointer transition-all hover:border-primary hover:-translate-y-0.5 hover:shadow-lg w-fit no-underline">
+                                <Image
+                                    src="/google-play.png"
+                                    alt="Google Play Store"
+                                    width={32}
+                                    height={32}
+                                    className="w-8 h-8 object-contain"
+                                />
+                                <div className="flex flex-col items-start leading-none">
+                                    <span className="text-[10px] text-gray-300 uppercase mb-0.5">GET IT ON</span>
+                                    <span className="text-[15px] font-bold text-white">Play Store</span>
+                                </div>
+                            </a>
+                            <a href="#coach" className="flex items-center gap-2 bg-black px-4 py-2.5 rounded-lg border border-white/20 cursor-pointer transition-all hover:border-primary hover:-translate-y-0.5 hover:shadow-lg w-fit no-underline">
+                                <svg width="40" height="40" viewBox="0 0 24 24" className="w-10 h-10 fill-white" aria-hidden="true" focusable="false">
+                                    <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.2 3.5 7.46 8.96 7.18c1.33.07 2.26.72 3.04.78 1.17-.24 2.3-.92 3.54-.83 1.49.12 2.61.7 3.35 1.76-3.08 1.88-2.35 6.03.48 7.17-.57 1.45-1.31 2.89-2.32 4.22zM11.9 7.05c-.15-2.15 1.6-3.92 3.63-4.05.28 2.36-2.12 4.28-3.63 4.05z" />
+                                </svg>
+                                <div className="flex flex-col items-start leading-none">
+                                    <span className="text-[10px] text-gray-300 uppercase mb-0.5">Download on the</span>
+                                    <span className="text-[15px] font-bold text-white">App Store</span>
                                 </div>
                             </a>
                         </div>
