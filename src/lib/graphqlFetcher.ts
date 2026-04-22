@@ -1,6 +1,6 @@
 import { API_BASE_URL } from './constants';
 
-interface GraphQLResponse<T = any> {
+interface GraphQLResponse<T = unknown> {
   data?: T;
   errors?: Array<{ message: string }>;
 }
@@ -10,9 +10,9 @@ const getAuthToken = (): string | null => {
   return localStorage.getItem('token');
 };
 
-export const graphqlFetcher = async <T = any>(
+export const graphqlFetcher = async <T = unknown>(
   query: string,
-  variables: Record<string, any> = {}
+  variables: Record<string, unknown> = {}
 ): Promise<T> => {
   const token = getAuthToken();
 

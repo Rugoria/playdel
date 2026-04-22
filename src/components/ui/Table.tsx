@@ -1,11 +1,11 @@
 // Table component
-interface TableProps {
+interface TableProps<T> {
   headers: string[];
-  data: any[];
-  renderRow: (item: any, index: number) => React.ReactNode;
+  data: T[];
+  renderRow: (item: T, index: number) => React.ReactNode;
 }
 
-export const Table = ({ headers, data, renderRow }: TableProps) => {
+export const Table = <T,>({ headers, data, renderRow }: TableProps<T>) => {
   return (
     <table>
       <thead>

@@ -36,7 +36,7 @@ export const SettingsForm = () => {
           setConfirmPassword('');
           alert('Password changed successfully');
         },
-        onError: (err: any) => {
+        onError: (err: Error) => {
           setError(err.message || 'Failed to change password');
         },
       }

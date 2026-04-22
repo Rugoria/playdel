@@ -34,7 +34,7 @@ export default function Header() {
       <div className="mx-5 h-[64px] flex items-center justify-between">
 
         {/* Logo */}
-        <a href="/" className="flex items-center gap-2 no-underline shrink-0">
+        <Link href="/" className="flex items-center gap-2 no-underline shrink-0">
           <Image
             src="/playdel-removebg-preview.png"
             alt="Playdel"
@@ -42,7 +42,7 @@ export default function Header() {
             height={36}
             className="h-8 w-auto object-contain"
           />
-        </a>
+        </Link>
 
         {/* Desktop Nav — centered pill */}
         <nav className="hidden md:flex items-center bg-white border border-black/10 rounded-full px-2 py-1 gap-1 shadow-sm">

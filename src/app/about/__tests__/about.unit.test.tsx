@@ -10,7 +10,7 @@ jest.mock('next/navigation', () => ({
 // Mock next/image (used by Header)
 jest.mock('next/image', () => ({
   __esModule: true,
-  default: (props: React.ImgHTMLAttributes<HTMLImageElement>) => <img {...props} />,
+  default: (props: React.ImgHTMLAttributes<HTMLImageElement>) => <img alt="" {...props} />,
 }));
 
 // Mock Header and Footer to isolate the About page
