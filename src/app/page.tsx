@@ -1,26 +1,35 @@
 'use client';
-import Hero from '@/components/Hero';
-import Mission from '@/components/Mission';
-import HowItWorks from '@/components/HowItWorks';
-import Clubs from '@/components/Clubs';
-import ForPlayers from '@/components/ForPlayers';
-import Trust from '@/components/Trust';
-import About from '@/components/About';
 import Header from '@/components/Header';
+import Hero from '@/components/Hero';
+import HowToJoin from '@/components/HowToJoin';
+import Stats from '@/components/Stats';
+import Membership from '@/components/Membership';
+import Coaches from '@/components/Coaches';
+import Training from '@/components/Training';
+import Events from '@/components/Events';
+import CtaBanner from '@/components/CtaBanner';
+import FAQ from '@/components/FAQ';
+import ReadyToJoin from '@/components/ReadyToJoin';
+import About from '@/components/About';
 import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col bg-bg">
+    <div className="min-h-screen bg-[#E7E7E7]">
       <Header />
-      <Hero />
-      <HowItWorks />
-      <Mission />
-      {/* <InteractiveSteps /> */}
-      <ForPlayers />
-      <Clubs />
-      <Trust />
-      <About />
+      <main className="pb-4">
+        <Hero />
+        <HowToJoin />
+         <About />
+        {/* <Stats /> */}
+        {/* <Membership /> */}
+        {/* <Coaches /> */}
+        {/* <Training /> */}
+        <Events />
+        <CtaBanner />
+        <FAQ />
+        <ReadyToJoin />
+      </main>
       <Footer />
     </div>
   );

@@ -1,91 +1,107 @@
 import Image from 'next/image';
 
 export default function Hero() {
-    return (
-        <section className="relative max-w-[1200px] mx-auto px-6 my-6">
-            <div className="relative w-full min-h-[560px] md:min-h-[600px] rounded-[20px] md:rounded-[32px] overflow-hidden flex items-end shadow-2xl">
-                {/* Background Image */}
-                <div className="absolute top-0 left-0 w-full h-full z-[1]">
-                    <Image
-                        src="/hero-bg.jpg"
-                        alt="Padel players on court"
-                        fill
-                        className="object-cover object-center"
-                        priority
-                    />
+  return (
+    <section className="mx-5 mt-4  overflow-hidden bg-[#F6F6F6] min-h-[420px]">
+      <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr_0.6fr] min-h-[420px] gap-2">
+
+        {/* Left: Text + Book Online card */}
+        <div className="flex flex-col justify-between p-8 md:p-10">
+          <div>
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-black leading-[0.95] uppercase mb-4">
+              WHERE YOUR<br />GAME START
+            </h1>
+            <p className="text-black/60 text-sm leading-relaxed max-w-[240px]">
+              When You Feel Like Giving Up, That&apos;s Actually When You Should Keep Going!
+            </p>
+          </div>
+
+          {/* Book Online card */}
+          <div className="mt-8 bg-primary max-w-[230px] relative overflow-hidden"
+            style={{ clipPath: 'polygon(0 0, 80% 0, 100% 12%, 100% 100%, 20% 100%, 0 88%)' }}>
+            
+            {/* Top content: racket + text side by side */}
+            <div className="flex items-start gap-2 p-3 pb-3">
+              {/* Padel racket image */}
+              <div className="shrink-0 w-[50px] h-[110px] relative -mb-2">
+                <img
+                  src="/playdel-removebg-preview.png"
+                  alt="Padel racket"
+                  className="w-full h-full object-contain drop-shadow-lg"
+                  style={{ filter: 'brightness(0) saturate(100%)' }}
+                />
+              </div>
+              {/* Text */}
+              <div className="pt-1">
+                <div className="text-black font-extrabold text-2xl leading-tight uppercase">
+                  BOOK<br />ONLINE!
                 </div>
-
-                {/* Overlay */}
-                <div className="absolute top-0 left-0 w-full h-full z-[2] bg-gradient-to-b from-transparent via-[rgba(11,18,32,0.4)] to-[rgba(11,18,32,0.9)]"></div>
-
-                {/* Social Icons (Top Right) */}
-                <div className="absolute top-5 right-5 md:top-8 md:right-8 z-10 flex flex-col items-end gap-3">
-                    <span className="text-base font-bold text-primary drop-shadow-sm">Follow us</span>
-                    <div className="flex gap-2.5">
-                        {[1, 2, 3, 4].map((_, i) => (
-                            <a key={i} href="#" className="w-10 h-10 rounded-full bg-white/90 flex items-center justify-center text-black transition-all hover:-translate-y-1 hover:bg-primary hover:shadow-lg backdrop-blur-sm">
-                                {i === 0 && (
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-                                    </svg>
-                                )}
-                                {i === 1 && (
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
-                                    </svg>
-                                )}
-                                {i === 2 && (
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
-                                    </svg>
-                                )}
-                                {i === 3 && (
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
-                                    </svg>
-                                )}
-                            </a>
-                        ))}
-                    </div>
-                </div>
-
-                {/* Hero Content */}
-                <div className="relative z-10 w-full p-6 md:p-12 lg:p-16 flex flex-col lg:flex-row justify-between items-start lg:items-end gap-10">
-                    <div className="max-w-[600px]">
-                        <h1 className="text-[42px] md:text-[64px] leading-[1.1] font-extrabold text-white mb-4 tracking-tight">
-                            Play Smarter.<br />
-                            <span className="text-primary">Improve Faster.</span>
-                        </h1>
-                        <p className="text-xs md:text-sm leading-relaxed text-white/90 mb-0 max-w-[480px]">
-                            Playdel is not just an app — it&apos;s a startup built around the padel community.
-                            A platform designed to connect players, clubs, and local padel communities in one place.
-                            From discovering clubs and booking courts to meeting players and growing local padel networks,
-                            Playdel aims to make the sport more accessible, social, and connected.
-                        </p>
-                    </div>
-
-                    <div className="flex flex-col lg:flex-row gap-4 items-start lg:items-end w-full lg:w-auto">
-                        <div className="flex flex-col md:flex-row gap-3 w-full lg:w-auto">
-                            <a href="#coach" className="flex items-center gap-3 bg-slate-900/60 backdrop-blur-xl border border-white/15 px-4 py-2.5 rounded-2xl cursor-pointer transition-all hover:bg-slate-900/85 hover:-translate-y-0.5 hover:border-primary w-full md:w-[220px] no-underline group">
-                                <div className="text-[15px] font-semibold text-white flex-1 transition-colors group-hover:text-primary">I&apos;m Player</div>
-                                <div className="flex items-center gap-2 bg-black px-3 py-1.5 rounded-lg border border-white/20">
-                                    <Image
-                                        src="/google-play.png"
-                                        alt="Google Play Store"
-                                        width={30}
-                                        height={30}
-                                        className="w-[30%] h-[30%] object-cover"
-                                    />
-                                    <div className="flex flex-col items-start leading-none">
-                                        <span className="text-[9px] text-gray-300 uppercase mb-0.5">GET IT ON</span>
-                                        <span className="text-[13px] font-bold text-white">Play Store</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                <p className="text-black/70 text-xs mt-2 leading-relaxed">
+                  Practice at any convenient time, ask our manager any question
+                </p>
+              </div>
             </div>
-        </section>
-    );
+
+            {/* 25% OFF arrow bar */}
+            <div className="relative mx-0">
+              <div
+                className="bg-black flex items-center gap-3 m-5 px-3 py-3"
+                style={{ clipPath: 'polygon(0 0, 88% 0, 100% 35%, 100% 100%, 12% 100%, 0 75%)' }}
+              >
+                {/* Tennis ball icon */}
+                <div className="w-7 h-7 rounded-full bg-primary flex items-center justify-center shrink-0">
+                  <div className="w-3 h-3 rounded-full bg-[#8bc400]" />
+                </div>
+                <span className="text-white font-extrabold text-base tracking-wide">25% OFF</span>
+                {/* Animated chevrons */}
+                <div className="ml-auto flex gap-0.5">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="#a3e635" className="animate-[slideRight_0.7s_ease-in-out_infinite_alternate]">
+                    <path d="M9 18l6-6-6-6"/>
+                  </svg>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="#a3e635" style={{animationDelay:'0.2s'}} className="animate-[slideRight_0.7s_ease-in-out_infinite_alternate]">
+                    <path d="M9 18l6-6-6-6"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Center: Main player image */}
+        <div className="relative overflow-hidden min-h-[420px]"
+          style={{ clipPath: 'polygon(0 0, 88% 0, 100% 12%, 100% 100%, 12% 100%, 0 88%)' }}>
+          <Image
+            src="/hero-bg.jpg"
+            alt="Padel player"
+            fill
+            className="object-cover object-top"
+            priority
+          />
+        </div>
+
+        
+
+        {/* Right: Second image + PUSH THE LIMITS badge */}
+        <div className="relative overflow-hidden min-h-75 lg:min-h-105"
+          style={{ clipPath: 'polygon(17% 0, 100% 0, 100% 88%, 80% 100%, 0 100%, 0 12%)' }}>
+          <Image
+            src="/hero-image.jpg"
+            alt="Padel ball"
+            fill
+            className="object-cover object-center"
+          />
+        </div>
+
+        {/* PUSH THE LIMITS badge - outside clip-path so it's not cut */}
+        <div className="absolute right-[20.9%] h-40 top-1/2 -translate-y-1/2 bg-primary px-3 py-4 flex flex-col justify-center items-center text-center z-20"
+          style={{ clipPath: 'polygon(0 0, 70% 0%, 100% 15%, 100% 100%, 30% 100%, 0 90%)' }}>
+          <span className="text-black font-extrabold text-sm leading-tight block uppercase text-center w-full">
+            PUSH<br />THE<br />LIMITS
+          </span>
+          <Image src="/ball.png" alt="playdel" width={36} height={36} className=" mt-2 object-contain" />
+        </div>
+
+      </div>
+    </section>
+  );
 }

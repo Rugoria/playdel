@@ -30,7 +30,7 @@ export default function HowItWorks() {
     }, []);
 
     return (
-        <section id="how" className="py-20 bg-[radial-gradient(circle_at_center,rgba(11,18,32,0)_0%,rgba(11,18,32,0.8)_100%)]" ref={sectionRef}>
+        <section id="how" className="py-20" ref={sectionRef}>
             <div className="max-w-[1200px] mx-auto px-6">
                 <h2 className="text-3xl font-bold mb-4">How It Works — Step by Step</h2>
                 <p className="text-muted mb-6 max-w-[720px] text-base leading-relaxed">
@@ -39,7 +39,7 @@ export default function HowItWorks() {
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 relative">
-                    <div className="step bg-gradient-to-br from-slate-900/60 to-slate-950/80 p-8 rounded-[20px] border border-slate-600/10 min-h-[240px] flex flex-col items-center text-center relative transition-all duration-300 backdrop-blur-md overflow-hidden hover:-translate-y-2 hover:border-primary/30 hover:bg-gradient-to-br hover:from-slate-900/80 hover:to-slate-900/90 hover:shadow-2xl group">
+                    <div className="step bg-white/5 p-8 rounded-[20px] border border-white/10 min-h-[240px] flex flex-col items-center text-center relative transition-all duration-300 backdrop-blur-md overflow-hidden hover:-translate-y-2 hover:border-primary/30 hover:bg-slate-900/30 hover:shadow-2xl group">
                         <div className="w-16 h-16 bg-gradient-to-br from-primary/10 to-primary/2 rounded-2xl flex items-center justify-center mb-6 text-primary border border-primary/10 transition-all duration-300 group-hover:bg-primary group-hover:text-[#0a0a0a] group-hover:scale-110 group-hover:-rotate-3 group-hover:shadow-[0_10px_20px_rgba(163,230,53,0.2)]">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                 <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
@@ -52,7 +52,7 @@ export default function HowItWorks() {
                         </div>
                     </div>
 
-                    <div className="step bg-gradient-to-br from-slate-900/60 to-slate-950/80 p-8 rounded-[20px] border border-slate-600/10 min-h-[240px] flex flex-col items-center text-center relative transition-all duration-300 backdrop-blur-md overflow-hidden hover:-translate-y-2 hover:border-primary/30 hover:bg-gradient-to-br hover:from-slate-900/80 hover:to-slate-900/90 hover:shadow-2xl group">
+                    <div className="step bg-white/5 p-8 rounded-[20px] border border-white/10 min-h-[240px] flex flex-col items-center text-center relative transition-all duration-300 backdrop-blur-md overflow-hidden hover:-translate-y-2 hover:border-primary/30 hover:bg-slate-900/30 hover:shadow-2xl group">
                         <div className="w-16 h-16 bg-gradient-to-br from-primary/10 to-primary/2 rounded-2xl flex items-center justify-center mb-6 text-primary border border-primary/10 transition-all duration-300 group-hover:bg-primary group-hover:text-[#0a0a0a] group-hover:scale-110 group-hover:-rotate-3 group-hover:shadow-[0_10px_20px_rgba(163,230,53,0.2)]">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                 <circle cx="11" cy="11" r="8"></circle>
@@ -65,7 +65,7 @@ export default function HowItWorks() {
                         </div>
                     </div>
 
-                    <div className="step bg-gradient-to-br from-slate-900/60 to-slate-950/80 p-8 rounded-[20px] border border-slate-600/10 min-h-[240px] flex flex-col items-center text-center relative transition-all duration-300 backdrop-blur-md overflow-hidden hover:-translate-y-2 hover:border-primary/30 hover:bg-gradient-to-br hover:from-slate-900/80 hover:to-slate-900/90 hover:shadow-2xl group">
+                    <div className="step bg-white/5 p-8 rounded-[20px] border border-white/10 min-h-[240px] flex flex-col items-center text-center relative transition-all duration-300 backdrop-blur-md overflow-hidden hover:-translate-y-2 hover:border-primary/30 hover:bg-slate-900/30 hover:shadow-2xl group">
                         <div className="w-16 h-16 bg-gradient-to-br from-primary/10 to-primary/2 rounded-2xl flex items-center justify-center mb-6 text-primary border border-primary/10 transition-all duration-300 group-hover:bg-primary group-hover:text-[#0a0a0a] group-hover:scale-110 group-hover:-rotate-3 group-hover:shadow-[0_10px_20px_rgba(163,230,53,0.2)]">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                 <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
@@ -80,7 +80,7 @@ export default function HowItWorks() {
                         </div>
                     </div>
 
-                    <div className="step bg-gradient-to-br from-slate-900/60 to-slate-950/80 p-8 rounded-[20px] border border-slate-600/10 min-h-[240px] flex flex-col items-center text-center relative transition-all duration-300 backdrop-blur-md overflow-hidden hover:-translate-y-2 hover:border-primary/30 hover:bg-gradient-to-br hover:from-slate-900/80 hover:to-slate-900/90 hover:shadow-2xl group">
+                    <div className="step bg-white/5 p-8 rounded-[20px] border border-white/10 min-h-[240px] flex flex-col items-center text-center relative transition-all duration-300 backdrop-blur-md overflow-hidden hover:-translate-y-2 hover:border-primary/30 hover:bg-slate-900/30 hover:shadow-2xl group">
                         <div className="w-16 h-16 bg-gradient-to-br from-primary/10 to-primary/2 rounded-2xl flex items-center justify-center mb-6 text-primary border border-primary/10 transition-all duration-300 group-hover:bg-primary group-hover:text-[#0a0a0a] group-hover:scale-110 group-hover:-rotate-3 group-hover:shadow-[0_10px_20px_rgba(163,230,53,0.2)]">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                 <circle cx="12" cy="12" r="10"></circle>
@@ -94,7 +94,7 @@ export default function HowItWorks() {
                         </div>
                     </div>
 
-                    <div className="step bg-gradient-to-br from-slate-900/60 to-slate-950/80 p-8 rounded-[20px] border border-slate-600/10 min-h-[240px] flex flex-col items-center text-center relative transition-all duration-300 backdrop-blur-md overflow-hidden hover:-translate-y-2 hover:border-primary/30 hover:bg-gradient-to-br hover:from-slate-900/80 hover:to-slate-900/90 hover:shadow-2xl group">
+                    <div className="step bg-white/5 p-8 rounded-[20px] border border-white/10 min-h-[240px] flex flex-col items-center text-center relative transition-all duration-300 backdrop-blur-md overflow-hidden hover:-translate-y-2 hover:border-primary/30 hover:bg-slate-900/30 hover:shadow-2xl group">
                         <div className="w-16 h-16 bg-gradient-to-br from-primary/10 to-primary/2 rounded-2xl flex items-center justify-center mb-6 text-primary border border-primary/10 transition-all duration-300 group-hover:bg-primary group-hover:text-[#0a0a0a] group-hover:scale-110 group-hover:-rotate-3 group-hover:shadow-[0_10px_20px_rgba(163,230,53,0.2)]">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                 <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>

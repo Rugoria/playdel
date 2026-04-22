@@ -24,7 +24,7 @@ export default function LoginPage() {
         console.log("password", password);
 
         try {
-            const res = await fetch("http://localhost:8081/graphql", {
+            const res = await fetch("http://localhost:8080/graphql", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

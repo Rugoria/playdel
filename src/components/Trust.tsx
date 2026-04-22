@@ -1,6 +1,6 @@
 export default function Trust() {
     return (
-        <section className="py-20 bg-slate-950/30">
+        <section className="py-20">
             <div className="max-w-[1200px] mx-auto px-6 text-center">
                 <h2 className="text-3xl font-bold mb-4">Built on Trust. Growing with the Community.</h2>
 
