@@ -2,6 +2,7 @@
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useEffect, useRef, useState } from 'react';
+import type { ReactElement } from 'react';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -16,7 +17,7 @@ interface StepContent {
 interface BlockData {
     title: string;
     subtitle: string;
-    icon: JSX.Element;
+    icon: ReactElement;
     steps: StepContent[];
 }
 
