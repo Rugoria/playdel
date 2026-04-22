@@ -1,5 +1,5 @@
 import * as fc from 'fast-check';
-import { FULL_STORY_TEXT } from '../page';
+import { FULL_STORY_TEXT } from '../content';
 
 // Feature: brand-story-about-page, Property 1: Full Story word count is between 150 and 200 words
 describe('About Page — Property Tests', () => {
